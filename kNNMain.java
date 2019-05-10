@@ -1,5 +1,6 @@
 import java.util.List;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 
@@ -11,7 +12,14 @@ public class kNNMain{
     // TASK 1: Use command line arguments to point DataSet.readDataSet method to
     // the desired file. Choose a given DataPoint, and print its features and label
 
-
+		List<DataPoint> data = new ArrayList<DataPoint>();
+		//String iris = args[0];
+		String iris = "iris.csv";
+		data = DataSet.readDataSet(iris);
+		DataPoint list= data.get(14);
+		System.out.print("Label" + list.getLabel());
+		String printablelist = Arrays.toString(list.getX());
+		System.out.print(printablelist);
 
     //TASK 2:Use the DataSet class to split the fullDataSet into Training and Held Out Test Dataset
 
