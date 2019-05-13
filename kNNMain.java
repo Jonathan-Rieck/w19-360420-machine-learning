@@ -17,7 +17,6 @@ public final static boolean task6 = true;        //to enable task6 enter true, o
     // the desired file. Choose a given DataPoint, and print its features and label
 
 		List<DataPoint> data = new ArrayList<DataPoint>();
-<<<<<<< HEAD
 		String file = "C:\\Users\\Jonathan Rieck\\Desktop\\College\\4th Semester\\Programing\\Java Code\\Flower Lab\\src\\breastCancer.csv";
 		data = DataSet.readDataSet(file);
 		DataPoint list= data.get(14);
@@ -25,15 +24,6 @@ public final static boolean task6 = true;        //to enable task6 enter true, o
 		//Print Statements
 			String printablelist = Arrays.toString(list.getX());
 			System.out.println("Label " + list.getLabel()+ " "+printablelist);
-=======
-		//String iris = args[0];
-		String iris = "iris.csv";
-		data = DataSet.readDataSet(iris);
-		DataPoint list= data.get(14);
-		System.out.print("Label" + list.getLabel());
-		String printablelist = Arrays.toString(list.getX());
-		System.out.print(printablelist);
->>>>>>> 58b739f2cbfd38c1a16715904fd6a622364f4872
 
     //TASK 2:Use the DataSet class to split the fullDataSet into Training and Held Out Test Dataset
 		double fraction = .25;
