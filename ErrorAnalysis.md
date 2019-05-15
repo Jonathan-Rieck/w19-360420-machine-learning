@@ -21,6 +21,15 @@
 # Types of Errors
 `1) False Positive & False Negative`
 	A false negative is when a doctor diagnoses a healthy individual as a sick one. While a false positive is when a doctor diagnoses a sick patient a healthy one.
-
-`2) Baseline with Recall & Precision`
+`2) Recall & Precision`
+	
+`3) Baseline with Recall & Precision`
 	A sensible baseline to ensure everyone's safety and health is to assign everyone as sick, which will ensure that recall and precision acheive maximum scores.
+| Trial |  Mean  | Standard Deviation|k|Precision|Recall|
+|:-----:|:------:|:-----------------:|:---:|:---:|:----:|
+|1	|94.15%  |3.819 E-14	     |4|0.915|0.956|
+|2	|96.56%	 |5.93 E-14	     |4|1|0.894|
+|3      |94.63%|3.91 E -14|8|0.905|0.963|
+
+`4) Hyper k Values`
+	Although, the program does not seem to enjoy running any k value higher that 8. Mathematically if the program were to take the whole plot of points, all points, then the precision would decrease and the recall would increase as a result due to all being correctly diagnosed as having cancer, and the opposite, healthy people being diagnosed sick, is not being evaluated.
