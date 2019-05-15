@@ -9,6 +9,7 @@
 	The accurancy varies from one run to another due to random number generation, which creates different random numbers at every time the program is ran. 
 `2) Baseline`
 	A sensible baseline is an above 90% prediction rate between a patient having a benign or malignant cancer. Furthermore, anything below this baseline is not condisered a successful algorithm. 
+
 | Trial |  Mean  | Standard Deviation|
 |:-----:|:------:|:-----------------:|
 |1	|94.63%  |3.91 E-14	     |
@@ -22,6 +23,7 @@
 	These two measures vary in the variables they take into account: For Recall, the number of false negatives are taken into account to view the accuracy of sick people wrongly diagnosed . On the other hand, the precision measures how accurate the algorithm is in regards to predicting a sick person as healthy, by using the false positives along with the correctly predicted malignant people.
 `3) Baseline with Recall & Precision`
 	A sensible baseline to ensure everyone's safety and health is to assign everyone as sick, which will ensure that recall and precision acheive maximum scores.
+
 | Trial |  Mean  | Standard Deviation|k|Precision|Recall|
 |:-----:|:------:|:-----------------:|:---:|:---:|:----:|
 |1	|94.15%  |3.819 E-14	     |4|0.915|0.956|
